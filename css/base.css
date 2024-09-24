@@ -1,0 +1,229 @@
+/* CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class], button {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd, button {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: grid;
+    place-items: center;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+/* Utility classes */
+
+/* Positioning */
+
+/* Centering */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+/* Width */
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+/* Text */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Font weight */
+
+.bold {
+    font-weight: 700;
+}
+
+/* Font size */
+
+.text-size-1 {
+    font-size: 1.5rem;
+}
+
+.text-size-2 {
+    font-size: 1.25rem;
+}
+
+.text-size-3 {
+    font-size: 1rem;
+}
+
+.text-size-4 {
+    font-size: 0.875rem;
+}
+
+/* Margin */
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+/* Padding */
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+/* Border */
+.border {
+    border: 1px solid var(--black);
+}
+
+.border-radius {
+    border-radius: 0.25rem;
+}
+
+/* CSS Variables */
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+
+    --yellow100: hsl(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+}
