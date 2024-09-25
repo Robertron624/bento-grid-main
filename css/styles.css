@@ -24,6 +24,18 @@
     src: url('../assets/fonts/static/DMSans-MediumItalic.ttf') format('truetype');
 }
 
+/* CSS Variables */
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+
+    --yellow100: hsl(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+}
+
 /* General body styles */
 
 body {
@@ -34,6 +46,52 @@ body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
+}
+
+main {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    max-width: 1440px;
+}
+
+/* CARDS */
+section.card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+}
+
+/* Faster socials card */
+.faster-socials {
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.faster-socials h1 {
+    font-weight: 500;
+    line-height: 1;
+    max-width: 18rem;
+}
+
+.faster-socials h1 .highlight {
+    color: var(--yellow500);
+}
+
+.faster-socials .stars {
+    margin-top: 1.5rem;
+    gap: .5rem;
+}
+
+.faster-socials .stars img {
+    width: 12rem;
 }
 
 /* Media Queries */

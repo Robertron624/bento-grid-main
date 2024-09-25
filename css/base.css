@@ -168,11 +168,11 @@ select {
 /* Font size */
 
 .text-size-1 {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
 }
 
 .text-size-2 {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
 }
 
 .text-size-3 {
@@ -180,7 +180,46 @@ select {
 }
 
 .text-size-4 {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
+}
+
+.text-size-5 {
+    font-size: 1.25rem;
+}
+
+.text-size-6 {
+    font-size: 1.5rem;
+}
+
+.text-size-7 {
+    font-size: 1.875rem;
+}
+
+.text-size-8 {
+    font-size: 2rem;
+}
+
+.text-size-9 {
+    font-size: 2.25rem;
+}
+
+.text-size-10 {
+    font-size: 2.5rem;
+}
+
+.text-size-11 {
+    font-size: 2.75rem;
+}
+
+.text-size-12 {
+    font-size: 3rem;
+}
+
+
+/* Font style */
+
+.italic {
+    font-style: italic;
 }
 
 /* Margin */
@@ -216,14 +255,3 @@ select {
     border-radius: 0.25rem;
 }
 
-/* CSS Variables */
-:root {
-    --purple-100: hsl(254, 88%, 90%);
-    --purple-500: hsl(256, 67%, 59%);
-
-    --yellow100: hsl(31, 66%, 93%);
-    --yellow500: hsl(39, 100%, 71%);
-
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 7%);
-}
