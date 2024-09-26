@@ -34,6 +34,10 @@
 
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 7%);
+
+
+    /* gaps */
+    --gap-cards-mobile: 2rem;
 }
 
 /* General body styles */
@@ -58,7 +62,7 @@ main {
 section.card-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--gap-cards-mobile);
 }
 
 .card {
@@ -67,6 +71,10 @@ section.card-list {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-inline: 1.5rem;
     padding-block: 2rem;
+}
+
+.card h2 {
+    line-height: 1.125;
 }
 
 /* Faster socials card */
@@ -92,6 +100,123 @@ section.card-list {
 
 .faster-socials .stars img {
     width: 12rem;
+}
+
+/* Multople accounts card */
+
+.multiple-accounts h2 {
+    margin-top: 1rem;
+}
+
+/* Consistent schedule card */
+
+.consistent-schedule {
+    background-color: var(--yellow500);
+    color: var(--black);
+    padding-block: 1rem 0;
+    height: 12rem;
+    overflow-y: hidden;
+}
+
+.consistent-schedule .image-container {
+    margin-top: 1.2rem;
+}
+
+.consistent-schedule img {
+    width: 12rem;
+    height: 8rem;
+}
+
+/* Shcedule socials card */
+
+.schedule-socials {
+    background-color: var(--purple-100);
+    color: var(--black);
+}
+
+.schedule-socials h2 {
+    font-size: 1.35rem;
+}
+
+.schedule-socials .image-container {
+    margin-top: 1.2rem;
+}
+
+.schedule-socials .image-container img {
+    border-radius: 1rem;
+}
+
+.schedule-socials p {
+    margin-top: 1.2rem;
+    width: 90%;
+}
+
+/* Grow followers card */
+
+.grow-followers {
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.grow-followers .image-container {
+    width: 80%;
+}
+
+.grow-followers h2 {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+    width: 70%;
+}
+
+/* Faster growth card */
+
+.faster-growth {
+    background-color: var(--white);
+    color: var(--black);
+    padding-block: 1.125rem;
+}
+
+.faster-growth .top p{
+    margin-top: .5rem;
+}
+
+.faster-growth .image-container {
+    margin-top: 1.2rem;
+    max-width: 10rem;
+}
+
+/* Create content quicker */
+
+.create-quicker {
+    background-color: var(--yellow100);
+    color: var(--black);
+}
+
+.create-quicker h2 .highlight {
+    color: var(--purple-500);
+}
+
+.create-quicker .image-container {
+    margin-top: 1.25rem;
+    max-width: 12rem;
+}
+
+/* ia writing card */
+
+.ia-writing {
+    background-color: var(--yellow500);
+    color: var(--black);
+}
+
+.ia-writing h2 {
+    max-width: 17rem;
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.ia-writing .image-container {
+    margin-top: 1.2rem;
+    max-width: 14rem;
 }
 
 /* Media Queries */
